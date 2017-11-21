@@ -25,6 +25,10 @@ Vagrant.configure("2") do |config|
   # NOTE: This will enable public access to the opened port
    config.vm.network "forwarded_port", guest: 3000, host: 3030
 
+  # Guard livereload service running from gues
+  # don't forget to switch on livereload extension from google chrome
+   config.vm.network "forwarded_port", guest: 35729, host: 35729
+
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine and only allow access
   # via 127.0.0.1 to disable public access
