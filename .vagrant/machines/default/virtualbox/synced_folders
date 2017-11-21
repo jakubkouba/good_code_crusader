@@ -1,1 +1,0 @@
-{"virtualbox":{"/var/www/good_code_crusader":{"guestpath":"/var/www/good_code_crusader","hostpath":"/Users/wizard/Projects/ruby/rails/good_code_crusader","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/wizard/Projects/ruby/rails/good_code_crusader","disabled":false,"__vagrantfile":true}}}
