@@ -48,6 +48,10 @@ group :development do
 
   gem 'guard'
   gem 'guard-livereload', '~> 2.5', require: false
+
+  # Front-End
+  gem 'jquery-rails'
+  gem 'bootstrap', '~> 4.0.0.beta2.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
