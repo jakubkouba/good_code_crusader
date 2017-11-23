@@ -15,6 +15,12 @@
 @import 'refinery/theme';
 @import 'bootstrap';
 
+@import 'general/typography';
+
 @import 'sections/header';
+@import 'sections/navigation';
+@import 'sections/footer';
+
+@import 'pages/base';
 @import 'pages/_home';
 
