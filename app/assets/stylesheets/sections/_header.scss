@@ -3,10 +3,6 @@
   @include gradient-directional($start-color: #0fb8ad, $end-color: #1fc8db, $deg: 40deg);
 
   text-align: center;
-
-  @include media-breakpoint-up(lg){
-    height: 10rem;
-  }
 }
 
 .logo {
@@ -16,5 +12,10 @@
 
   &__text {
     color: #adeaf9;
+    @include transition(color 0.3s ease);
+
+    @at-root &:hover {
+      color: #7feff9;
+    }
   }
 }
