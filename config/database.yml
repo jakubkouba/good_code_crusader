@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: good_code_crusader_production
-  username: good_code_crusader
+  username: root
   password: <%= ENV['GOOD_CODE_CRUSADER_DATABASE_PASSWORD'] %>
