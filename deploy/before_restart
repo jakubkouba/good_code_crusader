@@ -10,6 +10,7 @@ def gemfile_updated?
 end
 
 RAILS_ENV   = ENV['RAILS_ENV'] || 'production'
+puts "Deploying #{RAILS_ENV} environment"
 use_bundler = File.file?('Gemfile')
 rake_cmd    = use_bundler ? 'bundle exec rake' : 'rake'
 
