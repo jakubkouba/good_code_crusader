@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+source deploy/load_ruby
+
+echo 'Installing Bundler'
+gem install bundler
+echo 'Done'
+
+echo 'Running bundle install'
+bundle install
+echo 'Done'
+
+echo 'Create and migrate DB'
+bundle exec rake db:create
+bundle exec rake db:migrate
+
+source deploy/restart
