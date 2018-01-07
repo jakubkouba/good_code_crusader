@@ -1,6 +1,4 @@
 #!/bin/sh
 
-source ~/.config/set_env
-
-touch tmp/restart.txt
+sudo service nginx restart
 echo "restarting Passenger app"
