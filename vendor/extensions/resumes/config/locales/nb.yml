@@ -1,6 +1,8 @@
 nb:
   refinery:
     plugins:
+      educations:
+        title: Educations
       employments:
         title: Employments
       technologies:
@@ -9,6 +11,21 @@ nb:
         title: Resumes
     resumes:
       admin:
+        educations:
+          actions:
+            create_new: Lag en ny Education
+            reorder: Endre rekkefølgen på Educations
+            reorder_done: Ferdig å endre rekkefølgen Educations
+          records:
+            title: Educations
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Educations enda. Klikk på "Lag en ny Education"
+              for å legge til din første education.
+          education:
+            view_live_html: Vis hvordan denne education ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne education
+            delete: Fjern denne education permanent
         employments:
           actions:
             create_new: Lag en ny Employment
@@ -54,6 +71,9 @@ nb:
               i et nytt vindu)</em>
             edit: Rediger denne resume
             delete: Fjern denne resume permanent
+      educations:
+        show:
+          other: Andre Educations
       employments:
         show:
           other: Andre Employments
@@ -65,6 +85,12 @@ nb:
           other: Andre Resumes
   activerecord:
     attributes:
+      refinery/resumes/education:
+        school_name: School Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        description: Description
       refinery/resumes/employment:
         company_name: Company Name
         logo: Logo

@@ -1,6 +1,8 @@
 tr:
   refinery:
     plugins:
+      educations:
+        title: Educations
       employments:
         title: Employments
       technologies:
@@ -9,6 +11,21 @@ tr:
         title: Resumes
     resumes:
       admin:
+        educations:
+          actions:
+            create_new: Yeni Ekle Education
+            reorder: Tekrar sirala Educations
+            reorder_done: Tekrar siralama tamamlandiEducations
+          records:
+            title: Educations
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Educations yok henuz.  Tikla "Yeni Ekle Education"
+              eklemek senin ilk education.
+          education:
+            view_live_html: Bunu canlu education goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle education
+            delete: Bunu Sil education sonsuza dek
         employments:
           actions:
             create_new: Yeni Ekle Employment
@@ -54,6 +71,9 @@ tr:
               acar)</em>
             edit: Bunu Duzenle resume
             delete: Bunu Sil resume sonsuza dek
+      educations:
+        show:
+          other: Diger Educations
       employments:
         show:
           other: Diger Employments
@@ -65,6 +85,12 @@ tr:
           other: Diger Resumes
   activerecord:
     attributes:
+      refinery/resumes/education:
+        school_name: School Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        description: Description
       refinery/resumes/employment:
         company_name: Company Name
         logo: Logo

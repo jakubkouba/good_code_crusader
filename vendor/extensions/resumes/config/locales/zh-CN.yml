@@ -1,6 +1,8 @@
 zh-CN:
   refinery:
     plugins:
+      educations:
+        title: Educations
       employments:
         title: Employments
       technologies:
@@ -9,6 +11,19 @@ zh-CN:
         title: Resumes
     resumes:
       admin:
+        educations:
+          actions:
+            create_new: 建立新的 Education
+            reorder: 对 Educations 重新排序
+            reorder_done: 对 Educations 的重新排序结束
+          records:
+            title: Educations
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Educations . 点击 "Add New Education" 创建一个education.
+          education:
+            view_live_html: 查看 education 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 education
+            delete: 永久删除 education
         employments:
           actions:
             create_new: 建立新的 Employment
@@ -48,6 +63,9 @@ zh-CN:
             view_live_html: 查看 resume 的最新内容.<br/><em>(新窗口中打开)</em>
             edit: 编辑 resume
             delete: 永久删除 resume
+      educations:
+        show:
+          other: 其他 Educations
       employments:
         show:
           other: 其他 Employments
@@ -59,6 +77,12 @@ zh-CN:
           other: 其他 Resumes
   activerecord:
     attributes:
+      refinery/resumes/education:
+        school_name: School Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        description: Description
       refinery/resumes/employment:
         company_name: Company Name
         logo: Logo

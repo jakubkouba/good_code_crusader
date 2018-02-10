@@ -50,4 +50,21 @@ Refinery::Core::Engine.routes.draw do
     end
   end
 
+
+  # Frontend routes
+  namespace :resumes do
+    resources :educations, :only => [:index, :show]
+  end
+
+  # Admin routes
+  namespace :resumes, :path => '' do
+    namespace :admin, :path => "#{Refinery::Core.backend_route}/resumes" do
+      resources :educations, :except => :show do
+        collection do
+          post :update_positions
+        end
+      end
+    end
+  end
+
 end

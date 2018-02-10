@@ -1,6 +1,8 @@
 it:
   refinery:
     plugins:
+      educations:
+        title: Educations
       employments:
         title: Employments
       technologies:
@@ -9,6 +11,21 @@ it:
         title: Resumes
     resumes:
       admin:
+        educations:
+          actions:
+            create_new: Aggiungi Nuovo Education
+            reorder: Riordina Educations
+            reorder_done: Termina il Riordino di Educations
+          records:
+            title: Educations
+            sorry_no_results: Spiacenti! Nessun risultato trovato
+            no_items_yet: Non ci sono ancora Educations. Clicca "Aggiungi Nuovo Education"
+              per aggiungere il tuo primo education.
+          education:
+            view_live_html: Guarda live questo education <br/><em>(apre una nuova
+              finestra)</em>
+            edit: Modifica questo education
+            delete: Rimuovi per sempre questo education
         employments:
           actions:
             create_new: Aggiungi Nuovo Employment
@@ -53,6 +70,9 @@ it:
             view_live_html: Guarda live questo resume <br/><em>(apre una nuova finestra)</em>
             edit: Modifica questo resume
             delete: Rimuovi per sempre questo resume
+      educations:
+        show:
+          other: Altri Educations
       employments:
         show:
           other: Altri Employments
@@ -64,6 +84,12 @@ it:
           other: Altri Resumes
   activerecord:
     attributes:
+      refinery/resumes/education:
+        school_name: School Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        description: Description
       refinery/resumes/employment:
         company_name: Company Name
         logo: Logo

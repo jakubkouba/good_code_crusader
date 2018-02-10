@@ -1,6 +1,8 @@
 nl:
   refinery:
     plugins:
+      educations:
+        title: Educations
       employments:
         title: Employments
       technologies:
@@ -9,6 +11,21 @@ nl:
         title: Resumes
     resumes:
       admin:
+        educations:
+          actions:
+            create_new: Nieuwe Education toevoegen
+            reorder: De volgorde van de Educations wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Education-volgorde
+          records:
+            title: Educations
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Educations. Druk op 'Nieuwe Education toevoegen'
+              om de eerste toe te voegen.
+          education:
+            view_live_html: Deze education op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze education
+            delete: Deze education definitief verwijderen
         employments:
           actions:
             create_new: Nieuwe Employment toevoegen
@@ -54,6 +71,9 @@ nl:
               een nieuw venster)</em>
             edit: Bewerk deze resume
             delete: Deze resume definitief verwijderen
+      educations:
+        show:
+          other: Andere Educations
       employments:
         show:
           other: Andere Employments
@@ -65,6 +85,12 @@ nl:
           other: Andere Resumes
   activerecord:
     attributes:
+      refinery/resumes/education:
+        school_name: School Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        description: Description
       refinery/resumes/employment:
         company_name: Company Name
         logo: Logo

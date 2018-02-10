@@ -1,6 +1,8 @@
 ru:
   refinery:
     plugins:
+      educations:
+        title: Educations
       employments:
         title: Employments
       technologies:
@@ -9,6 +11,20 @@ ru:
         title: Resumes
     resumes:
       admin:
+        educations:
+          actions:
+            create_new: Добавить Education
+            reorder: Изменить порядок Educations
+            reorder_done: Закончить изменять порядок Educations
+          records:
+            title: Educations
+            sorry_no_results: Извините, поиск не дал результатов.
+            no_items_yet: Записей "Educations" не найдено. Нажмите "Добавить Education"
+              чтобы создать education.
+          education:
+            view_live_html: Просмотреть education вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать education
+            delete: Удалить education навсегда
         employments:
           actions:
             create_new: Добавить Employment
@@ -51,6 +67,9 @@ ru:
             view_live_html: Просмотреть resume вживую <br/><em>(в новом окне)</em>
             edit: Редактировать resume
             delete: Удалить resume навсегда
+      educations:
+        show:
+          other: Другие Educations
       employments:
         show:
           other: Другие Employments
@@ -62,6 +81,12 @@ ru:
           other: Другие Resumes
   activerecord:
     attributes:
+      refinery/resumes/education:
+        school_name: School Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        description: Description
       refinery/resumes/employment:
         company_name: Company Name
         logo: Logo

@@ -1,6 +1,8 @@
 cs:
   refinery:
     plugins:
+      educations:
+        title: Educations
       employments:
         title: Employments
       technologies:
@@ -9,6 +11,20 @@ cs:
         title: Resumes
     resumes:
       admin:
+        educations:
+          actions:
+            create_new: Přidat Education
+            reorder: Řadit Educations
+            reorder_done: Konec řazení Educations
+          records:
+            title: Educations
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Educations. Zvolte "Přidat
+              Education" pro přidání prvního education.
+          education:
+            view_live_html: Zobrazit náhled education<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit education
+            delete: Smazat education
         employments:
           actions:
             create_new: Přidat Employment
@@ -53,6 +69,9 @@ cs:
             view_live_html: Zobrazit náhled resume<br/><em>(otevře se v novém okně)</em>
             edit: Upravit resume
             delete: Smazat resume
+      educations:
+        show:
+          other: Další Educations
       employments:
         show:
           other: Další Employments
@@ -64,6 +83,12 @@ cs:
           other: Další Resumes
   activerecord:
     attributes:
+      refinery/resumes/education:
+        school_name: School Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        description: Description
       refinery/resumes/employment:
         company_name: Company Name
         logo: Logo
