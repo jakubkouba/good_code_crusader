@@ -1,0 +1,52 @@
+es:
+  refinery:
+    plugins:
+      technologies:
+        title: Technologies
+      resumes:
+        title: Resumes
+    resumes:
+      admin:
+        technologies:
+          actions:
+            create_new: Crear nuevo technology
+            reorder: Reordenar technologies
+            reorder_done: Reordenación de technologies completada
+          records:
+            title: Technologies
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay technologies todavía. Pulsa en "Crear nuevo Technology"
+              para crear tu primer technology.
+          technology:
+            view_live_html: Ver este technology como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este technology
+            delete: Borrar este technology para siempre
+        resumes:
+          actions:
+            create_new: Crear nuevo resume
+            reorder: Reordenar resumes
+            reorder_done: Reordenación de resumes completada
+          records:
+            title: Resumes
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay resumes todavía. Pulsa en "Crear nuevo Resume" para
+              crear tu primer resume.
+          resume:
+            view_live_html: Ver este resume como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este resume
+            delete: Borrar este resume para siempre
+      technologies:
+        show:
+          other: Otros technologies
+      resumes:
+        show:
+          other: Otros resumes
+  activerecord:
+    attributes:
+      refinery/resumes/technology:
+        title: Title
+        logo: Logo
+      refinery/resumes/resume:
+        title: Title

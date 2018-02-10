@@ -1,0 +1,52 @@
+nb:
+  refinery:
+    plugins:
+      technologies:
+        title: Technologies
+      resumes:
+        title: Resumes
+    resumes:
+      admin:
+        technologies:
+          actions:
+            create_new: Lag en ny Technology
+            reorder: Endre rekkefølgen på Technologies
+            reorder_done: Ferdig å endre rekkefølgen Technologies
+          records:
+            title: Technologies
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Technologies enda. Klikk på "Lag en ny Technology"
+              for å legge til din første technology.
+          technology:
+            view_live_html: Vis hvordan denne technology ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne technology
+            delete: Fjern denne technology permanent
+        resumes:
+          actions:
+            create_new: Lag en ny Resume
+            reorder: Endre rekkefølgen på Resumes
+            reorder_done: Ferdig å endre rekkefølgen Resumes
+          records:
+            title: Resumes
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Resumes enda. Klikk på "Lag en ny Resume" for
+              å legge til din første resume.
+          resume:
+            view_live_html: Vis hvordan denne resume ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne resume
+            delete: Fjern denne resume permanent
+      technologies:
+        show:
+          other: Andre Technologies
+      resumes:
+        show:
+          other: Andre Resumes
+  activerecord:
+    attributes:
+      refinery/resumes/technology:
+        title: Title
+        logo: Logo
+      refinery/resumes/resume:
+        title: Title

@@ -1,0 +1,51 @@
+cs:
+  refinery:
+    plugins:
+      technologies:
+        title: Technologies
+      resumes:
+        title: Resumes
+    resumes:
+      admin:
+        technologies:
+          actions:
+            create_new: Přidat Technology
+            reorder: Řadit Technologies
+            reorder_done: Konec řazení Technologies
+          records:
+            title: Technologies
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Technologies. Zvolte "Přidat
+              Technology" pro přidání prvního technology.
+          technology:
+            view_live_html: Zobrazit náhled technology<br/><em>(otevře se v novém
+              okně)</em>
+            edit: Upravit technology
+            delete: Smazat technology
+        resumes:
+          actions:
+            create_new: Přidat Resume
+            reorder: Řadit Resumes
+            reorder_done: Konec řazení Resumes
+          records:
+            title: Resumes
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Resumes. Zvolte "Přidat Resume"
+              pro přidání prvního resume.
+          resume:
+            view_live_html: Zobrazit náhled resume<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit resume
+            delete: Smazat resume
+      technologies:
+        show:
+          other: Další Technologies
+      resumes:
+        show:
+          other: Další Resumes
+  activerecord:
+    attributes:
+      refinery/resumes/technology:
+        title: Title
+        logo: Logo
+      refinery/resumes/resume:
+        title: Title

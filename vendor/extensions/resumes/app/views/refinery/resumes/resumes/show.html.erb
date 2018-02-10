@@ -1,0 +1,27 @@
+<% content_for :body_content_title do %>
+  <%= @resume.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @resume.title %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="resumes">
+      <% @resumes.each do |resume| %>
+        <li>
+          <%= link_to resume.title, refinery.resumes_resume_path(resume) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

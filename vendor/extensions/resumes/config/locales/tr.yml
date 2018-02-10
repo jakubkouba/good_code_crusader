@@ -1,0 +1,52 @@
+tr:
+  refinery:
+    plugins:
+      technologies:
+        title: Technologies
+      resumes:
+        title: Resumes
+    resumes:
+      admin:
+        technologies:
+          actions:
+            create_new: Yeni Ekle Technology
+            reorder: Tekrar sirala Technologies
+            reorder_done: Tekrar siralama tamamlandiTechnologies
+          records:
+            title: Technologies
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Technologies yok henuz.  Tikla "Yeni Ekle Technology"
+              eklemek senin ilk technology.
+          technology:
+            view_live_html: Bunu canlu technology goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle technology
+            delete: Bunu Sil technology sonsuza dek
+        resumes:
+          actions:
+            create_new: Yeni Ekle Resume
+            reorder: Tekrar sirala Resumes
+            reorder_done: Tekrar siralama tamamlandiResumes
+          records:
+            title: Resumes
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Resumes yok henuz.  Tikla "Yeni Ekle Resume"
+              eklemek senin ilk resume.
+          resume:
+            view_live_html: Bunu canlu resume goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle resume
+            delete: Bunu Sil resume sonsuza dek
+      technologies:
+        show:
+          other: Diger Technologies
+      resumes:
+        show:
+          other: Diger Resumes
+  activerecord:
+    attributes:
+      refinery/resumes/technology:
+        title: Title
+        logo: Logo
+      refinery/resumes/resume:
+        title: Title
