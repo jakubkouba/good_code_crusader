@@ -1,0 +1,54 @@
+<%= form_for [refinery, :resumes_admin, @employment] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @employment,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :company_name -%>
+    <%= f.text_field :company_name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :logo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :logo_id,
+               :image => @employment.logo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :start_date -%>
+    <%= f.date_select :start_date -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :end_date -%>
+    <%= f.date_select :end_date -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :position -%>
+    <%= f.text_field :position -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "resumes/employment" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.employments.admin.employments.employment'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @employment.company_name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

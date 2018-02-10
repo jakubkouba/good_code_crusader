@@ -1,12 +1,29 @@
 es:
   refinery:
     plugins:
+      employments:
+        title: Employments
       technologies:
         title: Technologies
       resumes:
         title: Resumes
     resumes:
       admin:
+        employments:
+          actions:
+            create_new: Crear nuevo employment
+            reorder: Reordenar employments
+            reorder_done: Reordenación de employments completada
+          records:
+            title: Employments
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay employments todavía. Pulsa en "Crear nuevo Employment"
+              para crear tu primer employment.
+          employment:
+            view_live_html: Ver este employment como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este employment
+            delete: Borrar este employment para siempre
         technologies:
           actions:
             create_new: Crear nuevo technology
@@ -37,6 +54,9 @@ es:
               en ventana nueva)</em>
             edit: Editar este resume
             delete: Borrar este resume para siempre
+      employments:
+        show:
+          other: Otros employments
       technologies:
         show:
           other: Otros technologies
@@ -45,6 +65,13 @@ es:
           other: Otros resumes
   activerecord:
     attributes:
+      refinery/resumes/employment:
+        company_name: Company Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        position: Position
+        description: Description
       refinery/resumes/technology:
         title: Title
         logo: Logo

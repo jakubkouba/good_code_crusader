@@ -1,12 +1,27 @@
 zh-CN:
   refinery:
     plugins:
+      employments:
+        title: Employments
       technologies:
         title: Technologies
       resumes:
         title: Resumes
     resumes:
       admin:
+        employments:
+          actions:
+            create_new: 建立新的 Employment
+            reorder: 对 Employments 重新排序
+            reorder_done: 对 Employments 的重新排序结束
+          records:
+            title: Employments
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Employments . 点击 "Add New Employment" 创建一个employment.
+          employment:
+            view_live_html: 查看 employment 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 employment
+            delete: 永久删除 employment
         technologies:
           actions:
             create_new: 建立新的 Technology
@@ -33,6 +48,9 @@ zh-CN:
             view_live_html: 查看 resume 的最新内容.<br/><em>(新窗口中打开)</em>
             edit: 编辑 resume
             delete: 永久删除 resume
+      employments:
+        show:
+          other: 其他 Employments
       technologies:
         show:
           other: 其他 Technologies
@@ -41,6 +59,13 @@ zh-CN:
           other: 其他 Resumes
   activerecord:
     attributes:
+      refinery/resumes/employment:
+        company_name: Company Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        position: Position
+        description: Description
       refinery/resumes/technology:
         title: Title
         logo: Logo

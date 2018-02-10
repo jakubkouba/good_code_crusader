@@ -1,0 +1,57 @@
+<% content_for :body_content_title do %>
+  <%= @employment.company_name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Company Name</h1>
+    <p>
+      <%=raw @employment.company_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Logo</h1>
+    <p>
+      <%= image_fu @employment.logo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Start Date</h1>
+    <p>
+      <%=raw @employment.start_date %>
+    </p>
+  </section>
+  <section>
+    <h1>End Date</h1>
+    <p>
+      <%=raw @employment.end_date %>
+    </p>
+  </section>
+  <section>
+    <h1>Position</h1>
+    <p>
+      <%=raw @employment.position %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @employment.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="employments">
+      <% @employments.each do |employment| %>
+        <li>
+          <%= link_to employment.company_name, refinery.resumes_employment_path(employment) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

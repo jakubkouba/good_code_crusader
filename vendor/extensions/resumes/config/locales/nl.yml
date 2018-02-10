@@ -1,12 +1,29 @@
 nl:
   refinery:
     plugins:
+      employments:
+        title: Employments
       technologies:
         title: Technologies
       resumes:
         title: Resumes
     resumes:
       admin:
+        employments:
+          actions:
+            create_new: Nieuwe Employment toevoegen
+            reorder: De volgorde van de Employments wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Employment-volgorde
+          records:
+            title: Employments
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Employments. Druk op 'Nieuwe Employment
+              toevoegen' om de eerste toe te voegen.
+          employment:
+            view_live_html: Deze employment op de website bekijken <br/><em>(opent
+              in een nieuw venster)</em>
+            edit: Bewerk deze employment
+            delete: Deze employment definitief verwijderen
         technologies:
           actions:
             create_new: Nieuwe Technology toevoegen
@@ -37,6 +54,9 @@ nl:
               een nieuw venster)</em>
             edit: Bewerk deze resume
             delete: Deze resume definitief verwijderen
+      employments:
+        show:
+          other: Andere Employments
       technologies:
         show:
           other: Andere Technologies
@@ -45,6 +65,13 @@ nl:
           other: Andere Resumes
   activerecord:
     attributes:
+      refinery/resumes/employment:
+        company_name: Company Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        position: Position
+        description: Description
       refinery/resumes/technology:
         title: Title
         logo: Logo
