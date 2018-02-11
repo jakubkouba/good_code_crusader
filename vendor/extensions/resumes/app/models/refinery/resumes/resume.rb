@@ -10,6 +10,9 @@ module Refinery
       #
       #   acts_as_indexed :fields => [:title]
 
+      has_many :technologies
+      accepts_nested_attributes_for :technologies, allow_destroy: true
+
     end
   end
 end

@@ -7,6 +7,24 @@
     <%= f.label :title -%>
     <%= f.text_field :title, :class => 'larger widest' -%>
   </div>
+  <div class="resume__section" >Technologies</div>
+  <ul>
+    <%= f.fields_for :technologies, @resume.technologies do |technologies_form| %>
+      <li>
+        <%= technologies_form.label :delete %>
+        <%= technologies_form.check_box :_destroy %>
+        <%= technologies_form.label :title %>
+        <%= technologies_form.text_field :title %>
+
+        <%= technologies_form.label :logo %>
+        <%= render '/refinery/admin/image_picker',
+                   :f => technologies_form,
+                   :field => :logo_id,
+                   :image => technologies_form.object.logo,
+                   :toggle_image_display => false -%>
+      </li>
+    <% end %>
+  </ul>
 
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
