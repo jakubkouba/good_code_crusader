@@ -1,0 +1,105 @@
+tr:
+  refinery:
+    plugins:
+      educations:
+        title: Educations
+      employments:
+        title: Employments
+      technologies:
+        title: Technologies
+      resumes:
+        title: Resumes
+    resumes:
+      admin:
+        educations:
+          actions:
+            create_new: Yeni Ekle Education
+            reorder: Tekrar sirala Educations
+            reorder_done: Tekrar siralama tamamlandiEducations
+          records:
+            title: Educations
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Educations yok henuz.  Tikla "Yeni Ekle Education"
+              eklemek senin ilk education.
+          education:
+            view_live_html: Bunu canlu education goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle education
+            delete: Bunu Sil education sonsuza dek
+        employments:
+          actions:
+            create_new: Yeni Ekle Employment
+            reorder: Tekrar sirala Employments
+            reorder_done: Tekrar siralama tamamlandiEmployments
+          records:
+            title: Employments
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Employments yok henuz.  Tikla "Yeni Ekle Employment"
+              eklemek senin ilk employment.
+          employment:
+            view_live_html: Bunu canlu employment goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle employment
+            delete: Bunu Sil employment sonsuza dek
+        technologies:
+          actions:
+            create_new: Yeni Ekle Technology
+            reorder: Tekrar sirala Technologies
+            reorder_done: Tekrar siralama tamamlandiTechnologies
+          records:
+            title: Technologies
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Technologies yok henuz.  Tikla "Yeni Ekle Technology"
+              eklemek senin ilk technology.
+          technology:
+            view_live_html: Bunu canlu technology goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle technology
+            delete: Bunu Sil technology sonsuza dek
+        resumes:
+          actions:
+            create_new: Yeni Ekle Resume
+            reorder: Tekrar sirala Resumes
+            reorder_done: Tekrar siralama tamamlandiResumes
+          records:
+            title: Resumes
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Resumes yok henuz.  Tikla "Yeni Ekle Resume"
+              eklemek senin ilk resume.
+          resume:
+            view_live_html: Bunu canlu resume goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle resume
+            delete: Bunu Sil resume sonsuza dek
+      educations:
+        show:
+          other: Diger Educations
+      employments:
+        show:
+          other: Diger Employments
+      technologies:
+        show:
+          other: Diger Technologies
+      resumes:
+        show:
+          other: Diger Resumes
+  activerecord:
+    attributes:
+      refinery/resumes/education:
+        school_name: School Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        description: Description
+      refinery/resumes/employment:
+        company_name: Company Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        position: Position
+        description: Description
+      refinery/resumes/technology:
+        title: Title
+        logo: Logo
+      refinery/resumes/resume:
+        title: Title

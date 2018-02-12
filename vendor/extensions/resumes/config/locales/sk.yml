@@ -1,0 +1,103 @@
+sk:
+  refinery:
+    plugins:
+      educations:
+        title: Educations
+      employments:
+        title: Employments
+      technologies:
+        title: Technologies
+      resumes:
+        title: Resumes
+    resumes:
+      admin:
+        educations:
+          actions:
+            create_new: Pridať Education
+            reorder: Preusporiadať Educations
+            reorder_done: Koniec radenia Educations
+          records:
+            title: Educations
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Educations. Kliknite na "Pridať
+              Education" pre pridanie prvého education.
+          education:
+            view_live_html: Zobraziť náhľad education<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť education
+            delete: Zmazať education
+        employments:
+          actions:
+            create_new: Pridať Employment
+            reorder: Preusporiadať Employments
+            reorder_done: Koniec radenia Employments
+          records:
+            title: Employments
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Employments. Kliknite na "Pridať
+              Employment" pre pridanie prvého employment.
+          employment:
+            view_live_html: Zobraziť náhľad employment<br/><em>(otvorí sa v novom
+              okne)</em>
+            edit: Upraviť employment
+            delete: Zmazať employment
+        technologies:
+          actions:
+            create_new: Pridať Technology
+            reorder: Preusporiadať Technologies
+            reorder_done: Koniec radenia Technologies
+          records:
+            title: Technologies
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Technologies. Kliknite na "Pridať
+              Technology" pre pridanie prvého technology.
+          technology:
+            view_live_html: Zobraziť náhľad technology<br/><em>(otvorí sa v novom
+              okne)</em>
+            edit: Upraviť technology
+            delete: Zmazať technology
+        resumes:
+          actions:
+            create_new: Pridať Resume
+            reorder: Preusporiadať Resumes
+            reorder_done: Koniec radenia Resumes
+          records:
+            title: Resumes
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Resumes. Kliknite na "Pridať Resume"
+              pre pridanie prvého resume.
+          resume:
+            view_live_html: Zobraziť náhľad resume<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť resume
+            delete: Zmazať resume
+      educations:
+        show:
+          other: Daľšie Educations
+      employments:
+        show:
+          other: Daľšie Employments
+      technologies:
+        show:
+          other: Daľšie Technologies
+      resumes:
+        show:
+          other: Daľšie Resumes
+  activerecord:
+    attributes:
+      refinery/resumes/education:
+        school_name: School Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        description: Description
+      refinery/resumes/employment:
+        company_name: Company Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        position: Position
+        description: Description
+      refinery/resumes/technology:
+        title: Title
+        logo: Logo
+      refinery/resumes/resume:
+        title: Title

@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @education.school_name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>School Name</h1>
+    <p>
+      <%=raw @education.school_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Logo</h1>
+    <p>
+      <%= image_fu @education.logo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Start Date</h1>
+    <p>
+      <%=raw @education.start_date %>
+    </p>
+  </section>
+  <section>
+    <h1>End Date</h1>
+    <p>
+      <%=raw @education.end_date %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @education.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="educations">
+      <% @educations.each do |education| %>
+        <li>
+          <%= link_to education.school_name, refinery.resumes_education_path(education) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

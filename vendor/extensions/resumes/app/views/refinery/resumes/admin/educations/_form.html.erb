@@ -1,0 +1,49 @@
+<%= form_for [refinery, :resumes_admin, @education] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @education,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :school_name -%>
+    <%= f.text_field :school_name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :logo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :logo_id,
+               :image => @education.logo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :start_date -%>
+    <%= f.date_select :start_date -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :end_date -%>
+    <%= f.date_select :end_date -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "resumes/education" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.educations.admin.educations.education'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @education.school_name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

@@ -1,0 +1,101 @@
+ru:
+  refinery:
+    plugins:
+      educations:
+        title: Educations
+      employments:
+        title: Employments
+      technologies:
+        title: Technologies
+      resumes:
+        title: Resumes
+    resumes:
+      admin:
+        educations:
+          actions:
+            create_new: Добавить Education
+            reorder: Изменить порядок Educations
+            reorder_done: Закончить изменять порядок Educations
+          records:
+            title: Educations
+            sorry_no_results: Извините, поиск не дал результатов.
+            no_items_yet: Записей "Educations" не найдено. Нажмите "Добавить Education"
+              чтобы создать education.
+          education:
+            view_live_html: Просмотреть education вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать education
+            delete: Удалить education навсегда
+        employments:
+          actions:
+            create_new: Добавить Employment
+            reorder: Изменить порядок Employments
+            reorder_done: Закончить изменять порядок Employments
+          records:
+            title: Employments
+            sorry_no_results: Извините, поиск не дал результатов.
+            no_items_yet: Записей "Employments" не найдено. Нажмите "Добавить Employment"
+              чтобы создать employment.
+          employment:
+            view_live_html: Просмотреть employment вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать employment
+            delete: Удалить employment навсегда
+        technologies:
+          actions:
+            create_new: Добавить Technology
+            reorder: Изменить порядок Technologies
+            reorder_done: Закончить изменять порядок Technologies
+          records:
+            title: Technologies
+            sorry_no_results: Извините, поиск не дал результатов.
+            no_items_yet: Записей "Technologies" не найдено. Нажмите "Добавить Technology"
+              чтобы создать technology.
+          technology:
+            view_live_html: Просмотреть technology вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать technology
+            delete: Удалить technology навсегда
+        resumes:
+          actions:
+            create_new: Добавить Resume
+            reorder: Изменить порядок Resumes
+            reorder_done: Закончить изменять порядок Resumes
+          records:
+            title: Resumes
+            sorry_no_results: Извините, поиск не дал результатов.
+            no_items_yet: Записей "Resumes" не найдено. Нажмите "Добавить Resume"
+              чтобы создать resume.
+          resume:
+            view_live_html: Просмотреть resume вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать resume
+            delete: Удалить resume навсегда
+      educations:
+        show:
+          other: Другие Educations
+      employments:
+        show:
+          other: Другие Employments
+      technologies:
+        show:
+          other: Другие Technologies
+      resumes:
+        show:
+          other: Другие Resumes
+  activerecord:
+    attributes:
+      refinery/resumes/education:
+        school_name: School Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        description: Description
+      refinery/resumes/employment:
+        company_name: Company Name
+        logo: Logo
+        start_date: Start Date
+        end_date: End Date
+        position: Position
+        description: Description
+      refinery/resumes/technology:
+        title: Title
+        logo: Logo
+      refinery/resumes/resume:
+        title: Title
