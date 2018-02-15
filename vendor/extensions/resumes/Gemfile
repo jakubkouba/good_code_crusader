@@ -32,6 +32,10 @@ group :development, :test do
       gem 'therubyracer', '~> 0.11.4'
     end
   end
+  gem 'factory_girl'
+  gem 'listen'
+  gem 'pry'
+  gem 'acts_as_indexed'
 end
 
 # Gems used only for assets and not required
