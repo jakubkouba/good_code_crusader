@@ -139,8 +139,6 @@ GEM
     factory_bot_rails (4.8.2)
       factory_bot (~> 4.8.2)
       railties (>= 3.0.0)
-    factory_girl (4.9.0)
-      activesupport (>= 3.0.0)
     ffi (1.9.21)
     fog-aws (2.0.0)
       fog-core (~> 1.38)
@@ -294,7 +292,7 @@ DEPENDENCIES
   activerecord-jdbcsqlite3-adapter
   acts_as_indexed
   coffee-rails
-  factory_girl
+  factory_bot_rails
   jruby-openssl
   listen
   mysql2

@@ -9,8 +9,8 @@ describe Refinery do
 
         describe "educations list" do
           before do
-            FactoryGirl.create(:education, :school_name => "UniqueTitleOne")
-            FactoryGirl.create(:education, :school_name => "UniqueTitleTwo")
+            FactoryBot.create(:education, :school_name => "UniqueTitleOne")
+            FactoryBot.create(:education, :school_name => "UniqueTitleTwo")
           end
 
           it "shows two items" do
@@ -45,7 +45,7 @@ describe Refinery do
           end
 
           context "duplicate" do
-            before { FactoryGirl.create(:education, :school_name => "UniqueTitle") }
+            before { FactoryBot.create(:education, :school_name => "UniqueTitle") }
 
             it "should fail" do
               visit refinery.resumes_admin_educations_path
@@ -62,7 +62,7 @@ describe Refinery do
         end
 
         describe "edit" do
-          before { FactoryGirl.create(:education, :school_name => "A school_name") }
+          before { FactoryBot.create(:education, :school_name => "A school_name") }
 
           it "should succeed" do
             visit refinery.resumes_admin_educations_path
@@ -80,7 +80,7 @@ describe Refinery do
         end
 
         describe "destroy" do
-          before { FactoryGirl.create(:education, :school_name => "UniqueTitleOne") }
+          before { FactoryBot.create(:education, :school_name => "UniqueTitleOne") }
 
           it "should succeed" do
             visit refinery.resumes_admin_educations_path

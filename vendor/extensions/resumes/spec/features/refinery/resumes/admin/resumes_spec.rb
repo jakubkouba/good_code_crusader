@@ -9,8 +9,8 @@ describe Refinery do
 
         describe "resumes list" do
           before do
-            FactoryGirl.create(:resume, :title => "UniqueTitleOne")
-            FactoryGirl.create(:resume, :title => "UniqueTitleTwo")
+            FactoryBot.create(:resume, :title => "UniqueTitleOne")
+            FactoryBot.create(:resume, :title => "UniqueTitleTwo")
           end
 
           it "shows two items" do
@@ -45,7 +45,7 @@ describe Refinery do
           end
 
           context "duplicate" do
-            before { FactoryGirl.create(:resume, :title => "UniqueTitle") }
+            before { FactoryBot.create(:resume, :title => "UniqueTitle") }
 
             it "should fail" do
               visit refinery.resumes_admin_resumes_path
@@ -62,7 +62,7 @@ describe Refinery do
         end
 
         describe "edit" do
-          before { FactoryGirl.create(:resume, :title => "A title") }
+          before { FactoryBot.create(:resume, :title => "A title") }
 
           it "should succeed" do
             visit refinery.resumes_admin_resumes_path
@@ -80,7 +80,7 @@ describe Refinery do
         end
 
         describe "destroy" do
-          before { FactoryGirl.create(:resume, :title => "UniqueTitleOne") }
+          before { FactoryBot.create(:resume, :title => "UniqueTitleOne") }
 
           it "should succeed" do
             visit refinery.resumes_admin_resumes_path

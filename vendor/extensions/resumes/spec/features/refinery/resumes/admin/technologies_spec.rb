@@ -9,8 +9,8 @@ describe Refinery do
 
         describe "technologies list" do
           before do
-            FactoryGirl.create(:technology, :title => "UniqueTitleOne")
-            FactoryGirl.create(:technology, :title => "UniqueTitleTwo")
+            FactoryBot.create(:technology, :title => "UniqueTitleOne")
+            FactoryBot.create(:technology, :title => "UniqueTitleTwo")
           end
 
           it "shows two items" do
@@ -45,7 +45,7 @@ describe Refinery do
           end
 
           context "duplicate" do
-            before { FactoryGirl.create(:technology, :title => "UniqueTitle") }
+            before { FactoryBot.create(:technology, :title => "UniqueTitle") }
 
             it "should fail" do
               visit refinery.resumes_admin_technologies_path
@@ -62,7 +62,7 @@ describe Refinery do
         end
 
         describe "edit" do
-          before { FactoryGirl.create(:technology, :title => "A title") }
+          before { FactoryBot.create(:technology, :title => "A title") }
 
           it "should succeed" do
             visit refinery.resumes_admin_technologies_path
@@ -80,7 +80,7 @@ describe Refinery do
         end
 
         describe "destroy" do
-          before { FactoryGirl.create(:technology, :title => "UniqueTitleOne") }
+          before { FactoryBot.create(:technology, :title => "UniqueTitleOne") }
 
           it "should succeed" do
             visit refinery.resumes_admin_technologies_path

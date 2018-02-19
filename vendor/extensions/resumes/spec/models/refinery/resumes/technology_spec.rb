@@ -5,7 +5,7 @@ module Refinery
     describe Technology do
       describe "validations", type: :model do
         subject do
-          FactoryGirl.create(:technology,
+          FactoryBot.create(:technology,
           :title => "Refinery CMS")
         end
 

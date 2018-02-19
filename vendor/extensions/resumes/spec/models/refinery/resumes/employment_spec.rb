@@ -5,7 +5,7 @@ module Refinery
     describe Employment do
       describe "validations", type: :model do
         subject do
-          FactoryGirl.create(:employment,
+          FactoryBot.create(:employment,
           :company_name => "Refinery CMS")
         end
 

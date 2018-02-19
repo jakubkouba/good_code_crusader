@@ -19,6 +19,8 @@ RSpec.configure do |config|
   config.mock_with :rspec
   config.filter_run :focus => true
   config.run_all_when_everything_filtered = true
+
+  config.include FactoryBot::Syntax::Methods
 end
 
 # Requires supporting files with custom matchers and macros, etc,
