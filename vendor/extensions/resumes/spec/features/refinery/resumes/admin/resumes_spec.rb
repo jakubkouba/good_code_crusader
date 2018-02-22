@@ -14,6 +14,10 @@ describe Refinery do
             expect(page).not_to have_content('Technologies')
           end
 
+          it 'does not display Education link' do
+            expect(page).not_to have_content('Educations')
+          end
+
         end
 
         xdescribe 'resumes list' do
