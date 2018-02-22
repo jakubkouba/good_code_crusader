@@ -8,7 +8,7 @@ module Refinery
 
       before_inclusion do
         Refinery::Plugin.register do |plugin|
-          plugin.name = "resumes"
+          plugin.name = 'resume'
           plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.resumes_admin_resumes_path }
           plugin.pathname = root
           

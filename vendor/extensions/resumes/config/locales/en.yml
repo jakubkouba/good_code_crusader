@@ -7,8 +7,8 @@ en:
         title: Employments
       technologies:
         title: Technologies
-      resumes:
-        title: Resumes
+      resume:
+        title: Resume
     resumes:
       admin:
         educations:

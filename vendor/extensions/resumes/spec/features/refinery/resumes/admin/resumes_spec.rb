@@ -22,6 +22,10 @@ describe Refinery do
             expect(page).not_to have_content('Employments')
           end
 
+          it 'display Resume link' do
+            expect(page).to have_content('Resume')
+          end
+
         end
 
         xdescribe 'resumes list' do
