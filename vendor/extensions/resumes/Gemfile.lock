@@ -260,6 +260,8 @@ GEM
       tilt (>= 1.1, < 3)
     seo_meta (3.0.0)
       railties (>= 5.0.0)
+    shoulda-matchers (3.1.2)
+      activesupport (>= 4.0.0)
     speakingurl-rails (8.0.2)
       railties (>= 3.1)
     sprockets (3.7.1)
@@ -292,7 +294,6 @@ DEPENDENCIES
   activerecord-jdbcsqlite3-adapter
   acts_as_indexed
   coffee-rails
-  factory_bot_rails
   jruby-openssl
   listen
   mysql2
@@ -303,6 +304,7 @@ DEPENDENCIES
   refinerycms-testing!
   rspec-its
   sass-rails
+  shoulda-matchers
   sqlite3
   uglifier
 
