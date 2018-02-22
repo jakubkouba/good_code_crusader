@@ -3,7 +3,8 @@ module Refinery
     class Employment < Refinery::Core::BaseModel
 
 
-      validates :company_name, :presence => true, :uniqueness => true
+      validates :company_name, presence: true, uniqueness: true
+      validates :logo, presence: true
 
       belongs_to :logo, :class_name => '::Refinery::Image'
 
