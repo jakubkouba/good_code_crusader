@@ -49,6 +49,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   gem 'guard'
+  gem 'guard-rspec'
   gem 'guard-livereload', '~> 2.5', require: false
 
   # Front-End
