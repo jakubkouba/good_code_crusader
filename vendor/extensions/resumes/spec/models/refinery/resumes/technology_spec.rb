@@ -3,15 +3,16 @@ require 'spec_helper'
 module Refinery
   module Resumes
     describe Technology do
-      describe "validations", type: :model do
+      describe 'validations', type: :model do
+
         subject do
-          FactoryBot.create(:technology,
-          :title => "Refinery CMS")
+          create(:technology, title: 'javascript')
         end
 
-        it { should be_valid }
-        its(:errors) { should be_empty }
-        its(:title) { should == "Refinery CMS" }
+        it { is_expected.to validate_presence_of :title }
+        it { is_expected.to validate_presence_of :logo }
+        it { is_expected.to be_valid }
+        its(:title) { is_expected.to eq 'javascript' }
       end
     end
   end
